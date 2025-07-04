@@ -16,10 +16,20 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("QuickPay Plans")),
+      backgroundColor: Colors.black,
+      appBar: AppBar(title: const Text("QuickPay Plans",style: TextStyle(
+        fontFamily: 'Poppins',
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),),
+      backgroundColor: Colors.black,
+      centerTitle: true,
+      ),
+      
       body: Column(
         children: [
-          Lottie.asset('assets/lotties/payment.json', height: 190),
+          
+          Lottie.asset('assets/lotties/payment.json', height: 240),
           Expanded(
             child: ListView.builder(
               itemCount: products.length,
