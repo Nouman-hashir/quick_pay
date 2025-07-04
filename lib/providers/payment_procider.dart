@@ -83,7 +83,7 @@ Future<void> makePayment(ProductModel product, BuildContext context, VoidCallbac
         'payment_method_types[]': 'card',
       };
 
-      const String secretKey = 'sk_test_51RfWxv01dkjtTJoTb7rypPOkQ3CkjY3j6RTRv9C6UHYhbbD1XWuC46hlUurK9onEOe8HVTWm75EQPzHM5eduP0qR00E59yz1HG'; 
+      const String secretKey = 'Enter_Your_Secret_Key_Here'; 
 
       var response = await http.post(
         Uri.parse('https://api.stripe.com/v1/payment_intents'),
